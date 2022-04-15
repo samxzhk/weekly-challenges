@@ -1,0 +1,247 @@
+/*CSS reset start*/
+html { box-sizing: border-box;}
+*,*::after,*::before {box-sizing: inherit;padding: 0;margin: 0;}
+a { text-decoration: none;}
+li { list-style-type: none;}
+img { max-width: 100%;height: auto;}
+/*CSS reset end*/
+/*
+---------------- FONTS----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* ----------------------------------------- */
+h1#title
+{
+    text-align: center;
+    margin-block:3rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+/* CONTAINER STYLING*/
+.container 
+{
+    width:80%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding-inline:1rem;
+    max-width: 1000px;
+    margin:2rem auto;
+}
+
+/*-----------IMG CONTAINER--------------------*/
+.container .img-container 
+{
+    padding:1rem;
+    
+}
+
+/* Info about the producy */
+.product-info-container
+{
+    padding-inline:1rem;
+}
+.product-info-container .product-title
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size:1.3rem;
+   
+    margin-bottom: 0.5rem;
+    
+}
+
+.product-info-container .product-description
+{
+    font-size:0.9rem;
+   
+    font-family: 'Overpass', sans-serif;
+}
+
+/* -----------Evaluation Container--------------*/
+.product-info-container .evaluation-container
+{
+    display: flex;
+    align-items: center;
+    margin-block:1.3rem;
+    
+    justify-content: space-between;
+}
+.evaluation-container > * 
+{
+    flex-basis:0;
+    flex-grow:1;
+}
+.evaluation-container p 
+{
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    color:#555;
+}
+
+.five-star-container img 
+{
+    width:80%;
+    
+}
+
+/* --------------- PRICE CONTAINER --------------*/
+
+.product-info-container .price-container 
+{
+    display: flex;
+    margin-block-end:1rem;
+}
+
+.price-container > * 
+{
+    flex-grow:1;
+    flex-basis: 0;
+}
+.price-container p:first-child
+{
+    font-family: 'Overpass', sans-serif;
+}
+.price-container p:first-child span 
+{
+    font-weight: bold;
+}
+.price-container .price 
+{
+    font-weight: bolder;
+    text-align: center;
+    font-size:1.25rem;
+}
+.price-container .price span 
+{
+    display: block;
+}
+
+/* ------------ OPTIONS CONTAINER -----------*/
+
+.product-info-container .options-container
+{
+   font-size:1.1rem;
+}
+.product-info-container .options-container p 
+{
+    color: #454545;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    margin-block-end: 0.5rem;
+}
+.options-container .items-container 
+{
+   
+    padding-block:1rem;
+    display: flex;
+   
+}
+
+.items-container .item 
+{
+    min-width: 40px;
+    padding:0.3rem;
+    cursor:pointer;
+    font-weight: bold;
+    border:2px solid grey;   
+    margin-inline-end: 0.6rem;
+    border-radius:6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+}
+.item.active
+{
+    border:3px solid rgba(159, 25, 25, 0.766);
+}
+
+/* --------- BUTTON CONTAINER ------ */
+.product-info-container .button-container 
+{
+    padding-block:1rem;
+}
+
+.button-container button 
+{
+    font-size:1.1rem;
+    display: inline-block;
+    margin-inline: auto;
+    cursor: pointer;
+    color:#fff;
+    border:none;
+    min-width: 150px;
+    padding:0.6rem 1rem;
+    border-radius: 15px;
+    transition:0.5s;
+    background-color: rgba(159, 25, 25, 0.766);
+}
+.button-container button:hover 
+{
+    background-color: rgba(203, 80, 80, 0.766);
+}
+.know-more 
+{
+    margin-block:1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.know-more a  
+{
+    color:#000;
+    font-size:1.1rem;
+}
+
+@media (min-width:740px)
+{
+    .container 
+    {
+        display: grid;
+       
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img-container
+    {
+        align-self: center;
+    }
+    .product-info-container 
+    {
+        padding-block-start:0.8rem;
+    }
+    .product-info-container .product-title
+    {
+        font-size:1.7rem;
+    }
+    .product-info-container .product-description
+    {
+        font-size:1.3rem;
+        margin-block:1rem;
+    }
+    .product-info-container .evaluation-container p
+    {
+        font-size:1.2rem;
+    }
+    .product-info-container .price-container
+    {
+        font-size:1.25rem;
+    }
+    .product-info-container .price-container .price 
+    {
+        font-size:1.7rem;
+    }
+    .product-info-container .options-container 
+    {
+        font-size:1.4rem;
+    }
+    .product-info-container .items-container .item 
+    {
+       min-width: 50px;
+       font-size:1.1rem;
+        
+    }
+    .product-info-container .button-container button
+    {
+        font-size:1.5rem;
+        min-width: 180px;
+        letter-spacing: 3px;
+    }
+}

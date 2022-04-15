@@ -1,0 +1,79 @@
+/*CSS reset start*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*CSS reset end*/
+/*
+---------------- FONTS----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@400;700&display=swap');
+
+/* ----------------------------------------- */
+body 
+{
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+}
+
+h1 
+{
+    margin-block:2rem;
+}
+h2, h3 
+{
+    margin-block:1.5rem;
+    position:relative;
+}
+p 
+{
+    margin-block:1rem;
+}
+
+section 
+{
+    max-width: 800px;
+    margin-inline:auto;
+    width: 80%;
+}
+
+body article ul 
+{
+    display: flex;
+    margin-block-end: 1rem;
+    text-align: left;
+    align-items: center;
+   
+    flex-direction: column;
+}
+body article ul li 
+{
+    text-align: center;
+    margin-block:0.5rem;
+    width: 100%; 
+}
+article ul li span 
+{
+    font-weight: bold;
+}
+
