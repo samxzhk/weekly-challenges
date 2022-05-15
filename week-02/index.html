@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JS projects</title>
+</head>
+<body>
+    <header>
+        <div class="title__wrapper">
+            <h1>Random Color Generator</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="options-container">
+            <h2>Choose What You Like</h2>
+            <div class="color-type-container">
+                <p>What color type would you like?</p>
+                <div class="types">
+                  
+                    <label for="hex">
+                        <span>HEX CODE</span>
+                        <input type="radio" name="color-type" id="hex">
+                    </label>
+                    <label for="rgb">
+                        <span>RGB CODE</span>
+                        <input type="radio" name="color-type" id="rgb">
+                    </label>
+                    <label for="hsl">
+                        <span>HSL CODE</span>
+                        <input type="radio" name="color-type" id="hsl">
+                    </label>
+                </div>
+            </div>
+            <div class="quantity">
+                <label class="color-quantity-container" for="color-quantity">
+                    <span>How many random colors?</span>
+                    <input type="number"  id="color-quantity"
+                    min="3" max="10" value="4">
+                </label>
+            </div>
+            <div class="btn-container">
+                <button id="generate-btn">Get Random Colors</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="colors-container">
+        <div class="color-item">
+            <div class="color"></div>
+            <div class="color-name">
+                <p>#FF00FF</p>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color"></div>
+            <div class="color-name">
+                <p>#FF00FF</p>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color"></div>
+            <div class="color-name">
+                <p>#FF00FF</p>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color"></div>
+            <div class="color-name">
+                <p>#FF00FF</p>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color"></div>
+            <div class="color-name">
+                <p>#FF00FF</p>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color"></div>
+            <div class="color-name">
+                <p>#FF00FF</p>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color"></div>
+            <div class="color-name">
+                <p>#FF00FF</p>
+            </div>
+        </div>
+        <div class="color-item">
+            <div class="color"></div>
+            <div class="color-name">
+                <p>#FF00FF</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
